@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercice 3 : Formulaire de contact</title>
+    </head>
+    <body>
+        <h2>Exercice 3 : Formulaire de contact</h2>
+        <form>
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <label>Mlle<input type="radio" name = "civilite" value="Mlle"></label>
+                <label>Mme<input type="radio" name = "civilite" value= "Mme"></label>
+                <label>M.<input type ="radio" name="civilite" value="M."></label><br><br>
+
+                <label>Prénom*<input type="text" name="prenom" placeholder="Votre prénom" required></label><br><br
+                <label>Nom*<input type="text" name="nom" placeholder="Votre nom" required></label><br><br
+                <label>Email*<input type ="email" placeholder="Votre adresse mail" required></label><br><br
+            </fieldset>
+            <fieldset>
+                <legend>Votre message</legend>
+                <label>Destinataire
+                    <select name="destinataire">
+                        <option value="general">Général</option>
+                        <option value="Comptabilité">Comptabilité</option>
+                        <option value="SAV">SAV</option>
+                        <option value="Service Client">Service Client</option>  
+                    </select>
+                </label><br><br>
+                
+                <label>Sujet*<input type="text" name="sujet" placeholder="L'objet de votre message" required></label><br><br>
+
+                <label>Message*<br>
+                    <textarea name="message" placeholder="Saisissez votre message ici" rows="6" cols="60" required></textarea>
+                </label><br><br>
+
+                <label>Ajouter une pièce jointe<input type="file" name="fichier"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Options</legend>
+                <label><input type="checkbox" name="copie">Recevoir une copie du message</label><br>
+                <label><input type="checkbox" name="offres">Recevoir nos offres </label><br><br>
+
+                <label>contacté par un conseiller:
+                    <label><input type="radio" name="contact" value="non">Non</label>
+                    <label><input type="radio" name="contact" value="tel">Par téléphone</label>
+                    <label><input type="radio" name="contact" value="email" checked>Par Email</label>
+                </label>     
+            </fieldset>
+
+            <p>* : champs obligatoire</p>
+            <button type="submit">Valider</button>
+            <button type="reset">Effacer</button>
+        </form>
+
+        <p><a href="file:///C:/Users/clarc/OneDrive/Desktop/Devoir_Dev/index.html">Retour à la page d'accueil</a></p>
+    </body>
+</html>
